@@ -1,16 +1,15 @@
-# 🛡️ Zero Trust AI Agent
+#  Zero Trust AI Agent
 
-A security-first AI agent implementation using Claude with enforced Zero Trust architecture for file operations.
+An AI agent implementation using Claude with enforced Zero Trust architecture for file operations.
 
 ## Features
 
 - **Zero Trust Framework**: Every action is verified against policies before execution
-- **AI-Powered**: Claude makes intelligent decisions on user requests
-- **Policy Engine**: JSON-based configuration for granular access control
+- **Policy Engine**: JSON based configuration for granular access control
 - **Audit Logging**: Complete JSON logs of all attempted operations
 - **Input Validation**: Path traversal and injection attack prevention
 - **Rate Limiting**: Configurable request throttling per function
-- **Risk Scoring**: Real-time risk assessment with threat detection
+- **Risk Scoring**: Risk assessment with threat detection
 - **Streamlit UI**: Interactive web interface with security visualization
 
 ## Quick Start
@@ -29,11 +28,6 @@ pip install anthropic streamlit python-dotenv
 2. Review `policies.json` to define what operations are allowed
 
 ### Run
-
-**Command-line version:**
-```bash
-python main.py
-```
 
 **Interactive web version:**
 ```bash
@@ -61,7 +55,7 @@ streamlit run streamlit_app_v2.py
 
 ## Security Best Practices
 
-⚠️ **Never commit credentials.txt to version control**  
+**Never commit credentials.txt to version control**  
 - Use environment variables for sensitive data
 - Rotate credentials regularly
 - Review audit logs for suspicious patterns
